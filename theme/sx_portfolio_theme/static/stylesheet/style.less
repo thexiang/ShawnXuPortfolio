@@ -462,11 +462,19 @@ ul.social {
   margin-left: 5%;
 }
 
+#myScrollspy{
+  display: none;
+}
+
 //
 // Desktop
 //
 
 @media screen and (min-width: 768px) {
+  #myScrollspy{
+    display: block;
+  }
+
   aside {
     width: 25%;
     height: 100%;
@@ -734,4 +742,22 @@ ul.social {
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
+}
+
+
+
+
+
+#scrollspy{
+
+  position: relative;
+  
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+
 }

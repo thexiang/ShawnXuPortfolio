@@ -1,7 +1,6 @@
 .vscode
 git
 *.DS_Store
-
 __pycache__
 
 dev
