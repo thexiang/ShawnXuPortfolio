@@ -42,3 +42,6 @@ PYGMENTS_STYLE = 'borland'
 DATE_FORMATS = {
     'en': '%m/%d/%Y',
 }
+
+
+ARTICLE_PATHS = ['articles','articles/test']

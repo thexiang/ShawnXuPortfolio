@@ -1,6 +1,6 @@
 Title: Pelican to S3
 Date: 2019-08-11
-Category: Notes
+Category: Pelican
 Tags: Pelican-Notes
 
 

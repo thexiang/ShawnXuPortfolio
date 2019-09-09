@@ -14,7 +14,8 @@
           {% set previous_date = article.locale_date %}
      {{ article.locale_date }}
         {% endif %}
-      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+      
+      <a href="{{ SITEURL }}/{{ article.url }}"> &nbsp;&nbsp; {{ article.title }}</a>
       <br/>
       {% endfor %}
     </dl>
