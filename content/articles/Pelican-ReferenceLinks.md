@@ -1,4 +1,4 @@
-Title: Reference Links
+Title: Pelican Reference Links
 Date: 2019-08-26
 Category: Pelican
 Tags: Pelican-Notes

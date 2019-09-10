@@ -44,4 +44,31 @@ DATE_FORMATS = {
 }
 
 
-ARTICLE_PATHS = ['articles','articles/test']
+ARTICLE_PATHS = ['articles','python']
+
+# Path to the folder containing the plugins
+PLUGIN_PATHS = ['pelican-plugins']
+# Enabled plugins
+PLUGINS = ['sitemap','pelican-ipynb.markup']
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 1,
+        'indexes': 0.5,
+        'pages': 0.5,
+    },
+    'changefreqs': {
+        'articles': 'always',
+        'indexes': 'hourly',
+        'pages': 'monthly'
+    }
+}
+
+MARKUP = ('md', 'ipynb')
+
+IGNORE_FILES = [".ipynb_checkpoints"]  
+
+IPYNB_USE_METACELL = True
+
+GOOGLE_ANALYTICS = "UA-147516390-1"
