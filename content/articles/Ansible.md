@@ -22,7 +22,7 @@ put public key on the
 
 Core Concepts:
 
-![](Untitled-6ef287d1-d882-4e4a-8086-37374d6cb121.png)
+![ansible-arch](Untitled-6ef287d1-d882-4e4a-8086-37374d6cb121.png)
 
 1. Modules
 2. Tasks
