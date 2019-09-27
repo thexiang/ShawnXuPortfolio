@@ -1,3 +1,3 @@
 # shawn_xu_porfolio
 
-[xiangxu.io](xiangxu.io)
+[xiangxu.io](www.xiangxu.io)
