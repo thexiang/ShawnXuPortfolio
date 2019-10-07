@@ -44,7 +44,7 @@ DATE_FORMATS = {
 }
 
 
-ARTICLE_PATHS = ['articles','python','data-science']
+ARTICLE_PATHS = ['articles','python','data_science']
 
 # Path to the folder containing the plugins
 PLUGIN_PATHS = ['pelican-plugins']
