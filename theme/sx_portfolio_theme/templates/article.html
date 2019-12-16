@@ -13,10 +13,7 @@
 {% block content %}
 <article class="single">
   <header>
-    {% if not ARTICLE_HIDE_TRANSLATION %}
-      {% import 'partial/translations.html' as translations with context %}
-      {{ translations.translations_for(article) }}
-    {% endif %}
+
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
       {{ _('Posted on %(when)s in %(category)s',

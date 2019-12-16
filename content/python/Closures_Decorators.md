@@ -6,7 +6,7 @@ Summary: Study note from pluralsight
 
 
 <details>
-<summary>Local Functions </summary>
+<summary>Local Functions Example</summary>
 
 ```python
 store = []
@@ -31,16 +31,17 @@ sort_by_last_letter(['a','c','b'])
 Out[7]: ['a', 'b', 'c']
 ```
 
-The main point here is that the def call in **sort_by_last_letter** is no different from any other name binding in the function, and a new function is created each time def is executed.
-  
+The main point here is that the def call in **sort_by_last_letter** is no different from any other name binding in the function, and a new function is created each time def is executed.  
 
     
-</details>
+</details>  
+---  
 
-Remember the ***LEGB*** rule for name lookup. First the local scope is checked, then the enclosing scope, next the global scope, and finally the built-in scope.  
-
+Remember the ***LEGB*** rule for name lookup. First the local scope is checked, then the enclosing scope, next the global scope, and finally the built-in scope.   
+ 
 * useful for specialized, one-off functions
 * Aid in code organization and readability
 * Similar to lambdas, but more general
     *   May contain multiple expressions
     *   May contain statements
+

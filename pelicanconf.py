@@ -23,10 +23,11 @@ SOCIAL = (
     ('github', 'https://github.com/thexiang'),
 )
 
-MENUITEMS = (('Blog', '/'),
+MENUITEMS = (
+             ('Articles', '/categories.html'),
+             ('Tags', '/tags.html'),
              ('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),
-             ('Tags', '/tags.html'),)
+             )
 
 DEFAULT_PAGINATION = False
 
@@ -36,7 +37,7 @@ STATIC_PATHS = ['images', 'extra']
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PYGMENTS_STYLE = 'borland'
+PYGMENTS_STYLE = 'abap'
 
 
 DATE_FORMATS = {
@@ -44,7 +45,7 @@ DATE_FORMATS = {
 }
 
 
-ARTICLE_PATHS = ['articles','python','data_science']
+ARTICLE_PATHS = ['articles','python','Data_science']
 
 # Path to the folder containing the plugins
 PLUGIN_PATHS = ['pelican-plugins']

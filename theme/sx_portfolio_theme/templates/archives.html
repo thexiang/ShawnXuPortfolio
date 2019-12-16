@@ -15,7 +15,15 @@
      {{ article.locale_date }}
         {% endif %}
       
-      <a href="{{ SITEURL }}/{{ article.url }}"> &nbsp;&nbsp; {{ article.title }}</a>
+      <a href="{{ SITEURL }}/{{ article.url }}"> &nbsp;&nbsp; {{ article.title }}  {{ article.category }}</a>
+      <br/>
+      {% endfor %}
+    </dl>
+
+      <dl>
+      {% for article in categories %}
+
+      <a href="{{ SITEURL }}/{{ article.url }}"> &nbsp;&nbsp; {{ article.title }}  {{ article.category }}</a>
       <br/>
       {% endfor %}
     </dl>
