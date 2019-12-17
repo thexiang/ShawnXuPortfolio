@@ -564,7 +564,7 @@ ul.social {
     font-family: "Fira Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #79838c;
+    color: white;
   }
   
   a {
@@ -582,15 +582,15 @@ ul.social {
     max-height: 100%;
   }
   
-  div.header {
+  div.header-xx {
     height: auto;
     text-align: center;
-    background: slategrey;
+    background: @xx-second;
     color: ghostwhite;
     padding: 2.3rem 1rem 2.3rem 1rem;
     position: relative;
   }
-  div.header:after {
+  div.header-xx:after {
     content: "";
     position: absolute;
     bottom: -5rem;
@@ -608,7 +608,7 @@ ul.social {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff", GradientType=0 );
     /* IE6-9 */
   }
-  div.header h1 {
+  div.header-xx h1 {
     margin-top: 0.8rem;
     margin-bottom: 0.5rem;
     font-weight: 200;
@@ -617,15 +617,15 @@ ul.social {
     text-transform: uppercase;
   }
   @media (min-width: 62em) {
-    div.header h1 {
+    div.header-xx h1 {
       font-size: 1.9em;
       letter-spacing: 0.2rem;
     }
   }
-  div.header h2 {
+  div.header-xx h2 {
     font-size: 1.1em;
     font-weight: 400;
-    color: #cfd7de;
+    color: @xx-botton;
     max-width: 30rem;
     margin: auto;
   }
@@ -637,7 +637,7 @@ ul.social {
     padding: 0rem 1rem 0rem 1rem;
   }
   
-  #timeline {
+  #timeline-content {
     position: relative;
     display: table;
     height: 100%;
@@ -645,7 +645,7 @@ ul.social {
     margin-right: auto;
     margin-top: 5rem;
   }
-  #timeline div:after {
+  #timeline-content div:after {
     content: "";
     width: 2px;
     position: absolute;
@@ -655,7 +655,7 @@ ul.social {
     z-index: 1;
     background: #c5c5c5;
   }
-  #timeline h3 {
+  #timeline-content h3 {
     position: -webkit-sticky;
     position: sticky;
     top: 5rem;
@@ -665,23 +665,23 @@ ul.social {
     font-weight: 400;
   }
   @media (min-width: 62em) {
-    #timeline h3 {
+    #timeline-content h3 {
       font-size: 1.1em;
     }
   }
-  #timeline section.year {
+  #timeline-content section.year {
     position: relative;
   }
-  #timeline section.year:first-child section {
+  #timeline-content section.year:first-child section {
     margin-top: -1.3em;
     padding-bottom: 0px;
   }
-  #timeline section.year section {
+  #timeline-content section.year section {
     position: relative;
     padding-bottom: 1.25em;
     margin-bottom: 2.2em;
   }
-  #timeline section.year section h4 {
+  #timeline-content section.year section h4 {
     position: absolute;
     bottom: 0;
     font-size: 0.9em;
@@ -692,11 +692,11 @@ ul.social {
     color: #c5c5c5;
   }
   @media (min-width: 62em) {
-    #timeline section.year section h4 {
+    #timeline-content section.year section h4 {
       font-size: 1em;
     }
   }
-  #timeline section.year section ul {
+  #timeline-content section.year section ul {
     list-style-type: none;
     padding: 0 0 0 75px;
     margin: -1.35rem 0 1em;
@@ -704,15 +704,15 @@ ul.social {
     font-size: 1em;
   }
   @media (min-width: 62em) {
-    #timeline section.year section ul {
+    #timeline-content section.year section ul {
       font-size: 1.1em;
       padding: 0 0 0 81px;
     }
   }
-  #timeline section.year section ul:last-child {
+  #timeline-content section.year section ul:last-child {
     margin-bottom: 0;
   }
-  #timeline section.year section ul:first-of-type:after {
+  #timeline-content section.year section ul:first-of-type:after {
     content: "";
     width: 10px;
     height: 10px;
@@ -727,18 +727,18 @@ ul.social {
     top: 3px;
     z-index: 2;
   }
-  #timeline section.year section ul li {
+  #timeline-content section.year section ul li {
     margin-left: 0.5rem;
   }
-  #timeline section.year section ul li:before {
+  #timeline-content section.year section ul li:before {
     content: "·";
     margin-left: -0.5rem;
     padding-right: 0.3rem;
   }
-  #timeline section.year section ul li:not(:first-child) {
+  #timeline-content section.year section ul li:not(:first-child) {
     margin-top: 0.5rem;
   }
-  #timeline section.year section ul li span.price {
+  #timeline-content section.year section ul li span.price {
     color: mediumturquoise;
     font-weight: 500;
   }
