@@ -5,39 +5,17 @@ html, body {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.1;
 }
 
-h1{
-  font-size: 2.4em
-}
-
-h2 {
-  font-size: 2em
-}
-
-h3 {
-  font-size: 1.6em
-}
-
-h4 {
-  font-size: 1.36em
-}
-
-h5 {
-  font-size: 1.2em
-}
-
-h6 {
-  font-size: 1.1em
-}
+h1{font-size: 2.4em}
+h2 {font-size: 2em}
+h3 {font-size: 1.6em}
+h4 {font-size: 1.36em}
+h5 {font-size: 1.2em}
+h6 {font-size: 1.1em}
 
 body {
   margin: 0;
@@ -51,11 +29,13 @@ body {
   aside {
     background-color: @sidebar-bg;
   }
+
 }
 
 a {
   color: @link-color;
   text-decoration: none;
+  z-index: 999;
 }
 
 a:hover {
@@ -94,7 +74,9 @@ aside {
 
     img {
       border-radius: 50%;
-      max-width: 140px;
+
+      width: 13rem;
+      height: 13rem;
     }
 
     h1 {
@@ -114,6 +96,7 @@ aside {
         line-height: 1.6em;
         font-size: 1.28em;
         text-transform: lowercase;
+        z-index: 999;
       }
     }
   }
@@ -126,6 +109,8 @@ main {
     font-size: .72em;
     padding: 14px 0 14px 0;
     border-bottom: @nav-border-color 1px solid;
+    margin-bottom: 2rem;
+    z-index: 999;
   }
 
   nav, .translations {

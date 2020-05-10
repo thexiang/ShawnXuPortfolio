@@ -1,79 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" >
+<title>Me </title>
+<body>
+<!-- partial:index.partial.html -->
+<div id="page_wrap">
 
-    <title>Me</title>
-</head>
+	<div class="banner">
+		<div class="typed_wrap">
+			<h1>Shawn Xu is  <span class="typed"></span></h1>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+<script>
+
+$(function(){
+	$(".typed").typed({
+		strings: ["a Python Developer", "a Web Developer", "Xiang Xu", "a Database Developer", "a nice person"],
+		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 30,
+		// time before typing starts
+		startDelay: 1200,
+		// backspacing speed
+		backSpeed: 20,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: true,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: 'html',
+		// call when done callback function
+		callback: function() {},
+		// starting callback function before each string
+		preStringTyped: function() {},
+		//callback for every typed string
+		onStringTyped: function() {},
+		// callback for reset
+		resetCallback: function() {}
+	});
+});
+</script>
 
 
-  <body data-target="#myScrollspy" data-spy="scroll" >
-    <div id="scrollspy" >
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-sm-3 col-4" id="myScrollspy">
-          <ul class="nav nav-pills flex-column" style="margin-top: 10%;">
-            <li class="nav-item">
-              <a class="nav-link" href="#section1">Skill Set</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section2">Certification</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section3">Education</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Work Experience</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#section41">BeaconHealthOptions</a>
-                <a class="dropdown-item" href="#section42">IntinsiQ</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-       
-        <div class="col-sm-9 col-8" style="margin-top: 10%;">
-          <div id="section1"  style="height: 400px">    
-            <h1>Skill Set</h1>
-
-            <i class="fas fa-snowflake"></i>
+  <script src='https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js'></script>
+<script> const COLORS = {
+  RED: '#FD5061',
+  YELLOW: '#FFCEA5',
+  BLACK: '#29363B',
+  WHITE: 'white',
+  VINOUS: '#A50710' };
 
 
-      
+const burst1 = new mojs.Burst({
+  left: 0, top: 0,
+  count: 8,
+  radius: { 50: 150 },
+  children: {
+    shape: 'line',
+    stroke: ['white', '#FFE217', '#FC46AD', '#D0D202', '#B8E986', '#D0D202'],
+    scale: 1,
+    scaleX: { 1: 0 },
+    // pathScale:    'rand(.5, 1.25)',
+    degreeShift: 'rand(-90, 90)',
+    radius: 'rand(20, 40)',
+    // duration:     200,
+    delay: 'rand(0, 150)',
+    isForce3d: true } });
 
-          </div>
-          <div id="section2" > 
-            <h1>Certification</h1>
-            <p>AWS DEVELOPER ASSOCIATE</p>
-            <p>SQL SERVER 2012</p>
-            <p>Udacity React NanoDegree</p>
 
-          </div>        
-          <div id="section3" >         
-            <h1>Education</h1>
-            <h2>Johns Hopkins University</h2>
-            <p>Master of Science, Computer Science, 2017-2020</p>
 
-            <h2>Queens College</h2>
-            <p>Bachelor of Science, Computer Science, 2010-2014</p>
-            
-          </div>
+const largeBurst = new mojs.Burst({
+  left: 0, top: 0,
+  count: 4,
+  radius: 0,
+  angle: 45,
+  radius: { 0: 450 },
+  children: {
+    shape: 'line',
+    stroke: '#4ACAD9',
+    scale: 1,
+    scaleX: { 1: 0 },
+    radius: 100,
+    duration: 450,
+    isForce3d: true,
+    easing: 'cubic.inout' } });
 
-          <h1>Work Experience</h1>
 
-          <div id="section41" style="height: 300px">         
-            <h3>BeaconHealthOptions - Software Engineer</h3>
-            <p>Python, SQL Server, VB6</p>
-          </div>      
-          <div id="section42" style="height: 300px">         
-            <h3>IntrinsiQ - Business Intelligence Developer</h3>
-            <p>SSIS, SSRS, SQL Server, ETL, Report, Datawarehouse</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    </body>
 
-    </html>
-    
+const CIRCLE_OPTS = {
+  left: 0, top: 0,
+  scale: { 0: 1 } };
+
+
+const largeCircle = new mojs.Shape({
+  ...CIRCLE_OPTS,
+  fill: 'none',
+  stroke: 'white',
+  strokeWidth: 4,
+  opacity: { .25: 0 },
+  radius: 250,
+  duration: 600 });
+
+
+const smallCircle = new mojs.Shape({
+  ...CIRCLE_OPTS,
+  fill: 'white',
+  opacity: { .5: 0 },
+  radius: 30 });
+
+
+document.addEventListener('click', function (e) {
+
+  burst1.
+  tune({ x: e.pageX, y: e.pageY }).
+  generate().
+  replay();
+
+  largeBurst.
+  tune({ x: e.pageX, y: e.pageY }).
+  replay();
+
+  largeCircle.
+  tune({ x: e.pageX, y: e.pageY }).
+  replay();
+
+  smallCircle.
+  tune({ x: e.pageX, y: e.pageY }).
+  replay();
+
+});</script>
+
+<style>
+  div{
+  z-index: -1;
+  }
+</style>
+</body>
+</html>
