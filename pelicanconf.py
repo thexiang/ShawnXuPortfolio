@@ -12,12 +12,6 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
 SOCIAL = (
     ('github', 'https://github.com/thexiang'),
@@ -51,21 +45,7 @@ ARTICLE_PATHS = ['articles','python','Python Data Science', 'Python OOP']
 # Path to the folder containing the plugins
 PLUGIN_PATHS = ['pelican-plugins']
 # Enabled plugins
-PLUGINS = ['sitemap','pelican-ipynb.markup']
-
-SITEMAP = {
-    'format': 'xml',
-    'priorities': {
-        'articles': 1,
-        'indexes': 0.5,
-        'pages': 0.5,
-    },
-    'changefreqs': {
-        'articles': 'always',
-        'indexes': 'hourly',
-        'pages': 'monthly'
-    }
-}
+PLUGINS = ['pelican-ipynb.markup']
 
 MARKUP = ('md', 'ipynb')
 
