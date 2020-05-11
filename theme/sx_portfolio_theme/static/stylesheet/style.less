@@ -106,7 +106,7 @@ main {
   nav {
     text-align: center;
     text-transform: uppercase;
-    font-size: .72em;
+    font-size: 1.1em;
     padding: 14px 0 14px 0;
     border-bottom: @nav-border-color 1px solid;
     margin-bottom: 2rem;
@@ -755,5 +755,41 @@ ul.social {
   div.col-8 div {
     height: 800px;
   }
+
+}
+
+
+.project-page{
+  .xiang-card-deck {
+
+    .xiang-card {
+      box-shadow: 5px 5px 12px #e4e4e4;
+      margin-bottom: 2rem;
+      border-radius: 20px;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        flex: unset;
+      }
+
+      img{
+        padding: 1rem 2rem;
+      }
+
+      .card-body {
+        padding: 1.25rem 2rem;
+
+        .xiang-btn {
+          background-color: #114a80;
+          padding: 0.7rem 1.5rem;
+          border-radius: 10px;
+          box-shadow: 3px 3px 10px #b6bec7;
+        }
+      }
+
+    }
+
+  }
+
 
 }

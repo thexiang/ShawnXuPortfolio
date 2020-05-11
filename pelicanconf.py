@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Shawn Xu'
 SITENAME = "Shawn Xu's Portfolio"
 SITEURL = ''
-
+PORT = 8111
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -24,7 +24,7 @@ SOCIAL = (
 )
 
 MENUITEMS = (
-             ('Articles', '/categories.html'),
+             ('Categories', '/Categories.html'),
              ('Tags', '/tags.html'),
              ('Archives', '/archives.html'),
              )
@@ -46,6 +46,7 @@ DATE_FORMATS = {
 
 
 ARTICLE_PATHS = ['articles','python','Python Data Science', 'Python OOP']
+# ARTICLE_PATHS = ['python']
 
 # Path to the folder containing the plugins
 PLUGIN_PATHS = ['pelican-plugins']
