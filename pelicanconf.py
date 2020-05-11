@@ -24,7 +24,7 @@ SOCIAL = (
 )
 
 MENUITEMS = (
-             ('Categories', '/Categories.html'),
+             ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),
              ('Archives', '/archives.html'),
              )
